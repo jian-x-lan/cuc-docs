@@ -2,7 +2,7 @@ const configData = require('../genSideBar.js')
 module.exports = {
   title: 'CUC-DOCS',
   description: 'cuc部门内部文档库',
-  base: "/vuepress-demo/",
+  base: "/cuc-docs/",
   markdown: {
     lineNumbers: true
   },
