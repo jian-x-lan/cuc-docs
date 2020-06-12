@@ -2,58 +2,60 @@ const fs = require('fs')
 const path = require('path')
 
 function readFileSync (readurl, parent) {
-  let temp = []
+  let obj = []
   let files = fs.readdirSync(readurl)
   files.forEach(function (filename) {
     let fullpath = path.join(readurl, filename)
     let stats = fs.statSync(fullpath)
     if (stats.isFile() && filename !== 'README.md') {
-      let fileTrueName = filename.substr(0, filename.length - 3)
-      temp.push(
+      let fileTrueName = filename.split('.')[0]
+      obj.push(
         {
           "title": fileTrueName,
-          "path": `${parent}/${fileTrueName}`
+          "path": `${parent}/${fileTrueName.replace(/\s+/g,"%20")}`
         }
       )
     } else if (stats.isDirectory()) {
-      let s = {}
-      temp.push(
-        s[`${parent}/${filename}`] =
-        {
-          title: `${filename}`,
-          collapsable: false,
-          // path: `${parent}/${filename}`,
-          children: readFileSync(fullpath, `${parent}/${filename}`)
-        }
-      )
+      if (filename !== 'images') {
+        let s = {}
+        obj.push(
+          s[`${parent}/${filename}`] =
+          {
+            title: `${filename}`,
+            collapsable: true,
+            children: readFileSync(fullpath, `${parent}/${filename}`)
+          }
+        )
+      }
+
     }
   }
   );
 
-  return temp
+  return obj
 }
 
 function slider (readurl, parent) {
-  let temp = {}
+  let sideBar = {}
+  let navArr=[]
   let files = fs.readdirSync(readurl)
   files.forEach(function (filename) {
     let fullpath = path.join(readurl, filename)
     let stats = fs.statSync(fullpath)
     if (stats.isDirectory()) {
-      temp[`${parent}/${filename}/`] = [{
+      navArr.push( { text: filename, link: `${parent}/${filename}/`},)
+      sideBar[`${parent}/${filename}/`] = [{
         title: `${filename}`,
         collapsable: false,
         children: readFileSync(fullpath, `${parent}/${filename}`)
       }]
     }
   });
-  return temp
+  return {
+    sideBar,navArr
+  }
 }
 
-const sidebarData = slider(path.resolve(__dirname, './docs'), '/docs')
+const themeConfigData = slider(path.resolve(__dirname, './docs'), '/docs')
 
-console.log(JSON.stringify(sidebarData) )
-
-module.exports = {
-  sidebarData
-}
+module.exports =themeConfigData

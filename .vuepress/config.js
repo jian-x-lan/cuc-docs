@@ -1,4 +1,4 @@
-const configData = require('../genSideBar.js')
+const themeConfigData = require('../genSideBar.js')
 module.exports = {
   title: 'CUC-DOCS',
   description: 'cuc部门内部文档库',
@@ -10,10 +10,9 @@ module.exports = {
     displayAllHeaders: true,
     nav: [
       { text: '首页', link: '/' },
-      { text: '目录一', link: '/docs/category1/' },
-      { text: '目录二', link: '/docs/category2/' }
+      ...themeConfigData.navArr
     ],
-    sidebarDepth: 3,
-    sidebar: configData.sidebarData
+    sidebarDepth: 2,
+    sidebar: themeConfigData.sideBar
   }
 }
