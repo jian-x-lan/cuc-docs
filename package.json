@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "vuepress dev . -p 9000",
+    "build": "vuepress build .",
+    "deploy": "bash deploy.sh"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
