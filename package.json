@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "vuepress dev . -p 9000",
+    "dev": "vuepress dev .",
     "build": "vuepress build .",
     "deploy": "bash deploy.sh"
   },

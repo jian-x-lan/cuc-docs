@@ -3,6 +3,7 @@ module.exports = {
   title: 'CUC-DOCS',
   description: 'cuc部门内部文档库',
   base: "/cuc-docs/",
+  port: 9000,
   markdown: {
     lineNumbers: true
   },

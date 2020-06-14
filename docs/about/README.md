@@ -16,7 +16,7 @@ npm install
 # 根目录下运行
 npm run dev
 
-# 浏览器打开
+# 浏览器本地预览
 http://localhost:9000
 
 
@@ -24,9 +24,14 @@ http://localhost:9000
 # 根目录下运行
 npm run deploy
 
-# 浏览器打开
+# 浏览器查看发布后的效果(需要时间，等待几分钟后清缓存再刷新页面查看效果)
 https://jian-x-lan.github.io/cuc-docs/
 ```
+::: tip 注意点
+修改`.vuepress/config.js`文件，及`新增/删除/重命名`文档时，需要执行以下命令
+
+npm run dev
+:::
 
 ### 相关参考链接
 
