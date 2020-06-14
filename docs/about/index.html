@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>关于搭建本文档库 | CUC-DOCS</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    
+    <meta name="description" content="cuc部门内部文档库">
+    <link rel="preload" href="/cuc-docs/assets/css/0.styles.d5b52bdb.css" as="style"><link rel="preload" href="/cuc-docs/assets/js/app.9589c70d.js" as="script"><link rel="preload" href="/cuc-docs/assets/js/2.bbedc10a.js" as="script"><link rel="preload" href="/cuc-docs/assets/js/7.a7f132d2.js" as="script"><link rel="prefetch" href="/cuc-docs/assets/js/10.4115cbba.js"><link rel="prefetch" href="/cuc-docs/assets/js/11.0d8e4152.js"><link rel="prefetch" href="/cuc-docs/assets/js/12.f94a810f.js"><link rel="prefetch" href="/cuc-docs/assets/js/13.9154bf2a.js"><link rel="prefetch" href="/cuc-docs/assets/js/14.5bb805a4.js"><link rel="prefetch" href="/cuc-docs/assets/js/15.ce1ef52b.js"><link rel="prefetch" href="/cuc-docs/assets/js/16.0dda50eb.js"><link rel="prefetch" href="/cuc-docs/assets/js/3.087ad7d7.js"><link rel="prefetch" href="/cuc-docs/assets/js/4.661a96ac.js"><link rel="prefetch" href="/cuc-docs/assets/js/5.6ae99670.js"><link rel="prefetch" href="/cuc-docs/assets/js/6.aaa5576b.js"><link rel="prefetch" href="/cuc-docs/assets/js/8.074bfc82.js"><link rel="prefetch" href="/cuc-docs/assets/js/9.7790c205.js">
+    <link rel="stylesheet" href="/cuc-docs/assets/css/0.styles.d5b52bdb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/cuc-docs/" class="home-link router-link-active"><!----> <span class="site-name">CUC-DOCS</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/cuc-docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/cuc-docs/docs/iBPM/" class="nav-link">
+  iBPM
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/cuc-docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/cuc-docs/docs/iBPM/" class="nav-link">
+  iBPM
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>about</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/cuc-docs/docs/about/引入静态资源.html" class="sidebar-link">引入静态资源</a></li><li><a href="/cuc-docs/docs/about/文档命名规范.html" class="sidebar-link">文档命名规范</a></li><li><a href="/cuc-docs/docs/about/文档标题生成侧边栏.html" class="sidebar-link">文档标题生成侧边栏</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cuc-docs/docs/about/文档标题生成侧边栏.html#一、xxx" class="sidebar-link">一、xxx</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cuc-docs/docs/about/文档标题生成侧边栏.html#_1-1、xxx-1" class="sidebar-link">1.1、xxx-1</a></li><li class="sidebar-sub-header"><a href="/cuc-docs/docs/about/文档标题生成侧边栏.html#_1-2、xxx-2" class="sidebar-link">1.2、xxx-2</a></li></ul></li><li class="sidebar-sub-header"><a href="/cuc-docs/docs/about/文档标题生成侧边栏.html#二、yyy" class="sidebar-link">二、yyy</a></li></ul></li><li><a href="/cuc-docs/docs/about/文档目录结构.html" class="sidebar-link">文档目录结构</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="关于搭建本文档库"><a href="#关于搭建本文档库" class="header-anchor">#</a> 关于搭建本文档库</h2> <h3 id="运行与发布"><a href="#运行与发布" class="header-anchor">#</a> 运行与发布</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>1. 全局安装vuepress
+npm install vuepress -g
+
+2. 下载本项目
+git clone https://github.com/jian-x-lan/cuc-docs.git
+
+3. 安装依赖
+cd cuc-docs
+npm install
+
+4. 本地预览
+# 根目录下运行
+npm run dev
+
+# 浏览器本地预览
+http://localhost:9000
+
+
+5. 发布
+# 根目录下运行
+npm run deploy
+
+# 浏览器查看发布后的效果(需要时间，等待几分钟后清缓存再刷新页面查看效果)
+https://jian-x-lan.github.io/cuc-docs/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">注意点</p> <p>修改<code>.vuepress/config.js</code>文件，及<code>新增/删除/重命名</code>文档时，需要执行以下命令</p> <p>npm run dev</p></div> <h3 id="相关参考链接"><a href="#相关参考链接" class="header-anchor">#</a> 相关参考链接</h3> <ul><li><a href="https://www.cnblogs.com/LHLVS/p/11376732.html" target="_blank" rel="noopener noreferrer">怎么把使用vuepress搭建的博客部署到Github Pages<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/cuc-docs/assets/js/app.9589c70d.js" defer></script><script src="/cuc-docs/assets/js/2.bbedc10a.js" defer></script><script src="/cuc-docs/assets/js/7.a7f132d2.js" defer></script>
+  </body>
+</html>
